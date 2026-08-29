@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vanessa Souza's portfolio — UX/UI Designer and Automation Engineer.">
+  <title>Vanessa Souza — UX/UI Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Pré-visualizações reais dos projetos, sem ilustrações genéricas. */
+    .project-visual .project-preview{display:block;width:100%;height:100%;object-fit:cover;transition:transform .5s ease}.visual-ima .project-preview{object-fit:contain}.project-visual:hover .project-preview{transform:scale(1.025)}.project-featured .project-visual{height:clamp(280px,34vw,440px);aspect-ratio:auto}.project-pair .project-visual{height:clamp(250px,25vw,340px);aspect-ratio:auto}.visual-ima{background:var(--ink)}.visual-alumni{background:var(--violet)}.visual-eco{background:#155642}.project-visual .case-preview-label{z-index:2;top:24px;left:28px;padding:0;border:0;border-radius:0;background:none!important;color:#fff;font:600 12px Manrope;letter-spacing:.09em;text-shadow:0 1px 10px rgba(0,0,0,.55)}.project-preview-action{position:absolute;inset:0;z-index:1;display:flex;flex-direction:column;justify-content:flex-end;padding:30px;color:#fff;background:linear-gradient(180deg,transparent 34%,rgba(10,14,12,.86));opacity:0;transition:opacity .3s ease}.project-preview-action:focus-visible{opacity:1;outline:3px solid var(--acid);outline-offset:-5px}.project-visual:hover .project-preview-action{opacity:1}.project-preview-action small{font:600 10px Manrope;letter-spacing:.14em}.project-preview-action strong{margin-top:9px;font:600 clamp(1.5rem,2.4vw,2.5rem)/1 Manrope;letter-spacing:-.05em}.project-preview-action span{max-width:490px;margin-top:10px;font-size:14px;line-height:1.45}.project-preview-action b{position:absolute;right:28px;bottom:28px;display:grid;place-items:center;width:48px;height:48px;border-radius:50%;background:var(--acid);color:var(--ink);font-size:22px}@media(max-width:800px){.project-preview-action{padding:22px;opacity:1;background:linear-gradient(180deg,transparent 45%,rgba(10,14,12,.78))}.project-preview-action span{display:none}.project-preview-action b{right:20px;bottom:18px;width:42px;height:42px}}
+    .project-visual .case-preview-label{top:0;left:0;right:0;display:flex;align-items:center;min-height:82px;padding:18px 28px;background:var(--ink);color:#fff;font:700 clamp(1.3rem,2.2vw,2.2rem)/1 Manrope;letter-spacing:-.055em;text-shadow:none;border-radius:0}.project-preview-tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}.project-preview-tags i{padding:6px 9px;border:1px solid rgba(255,255,255,.55);border-radius:999px;font:600 10px Manrope;font-style:normal;letter-spacing:.04em}
+    .project-card-heading{display:flex;align-items:baseline;justify-content:space-between;gap:24px;margin:0 0 18px}.project-card-heading>span{font:600 11px Manrope;letter-spacing:.14em;color:var(--muted)}.project-card-heading h3{margin:0;font:600 clamp(1.4rem,2.25vw,2.25rem)/1 Manrope;letter-spacing:-.055em}.project-card-footer{display:flex;align-items:flex-start;justify-content:space-between;gap:28px;padding:17px 0 0;border-top:1px solid var(--line)}.project-card-footer p{max-width:520px;margin:0;color:var(--muted);font-size:14px;line-height:1.5}.project-card-footer>div{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:7px}.project-card-footer i{padding:7px 10px;border:1px solid var(--line);border-radius:999px;font:600 10px Manrope;font-style:normal;white-space:nowrap}.project-preview-action{background:transparent!important;opacity:1!important}.project-preview-action small,.project-preview-action strong,.project-preview-action span,.project-preview-action .project-preview-tags{display:none}.project-preview-action b{opacity:0;transform:translateY(8px);transition:.25s}.project-visual:hover .project-preview-action b,.project-preview-action:focus-visible b{opacity:1;transform:none}@media(max-width:800px){.project-card-heading{display:block;margin-bottom:13px}.project-card-heading h3{margin-top:8px}.project-card-footer{display:block}.project-card-footer>div{justify-content:flex-start;margin-top:14px}.project-preview-action b{opacity:1;transform:none}}
+    /* Hierarquia final dos cards. */
+    .project-card-heading{display:grid;grid-template-columns:auto 1fr;align-items:baseline;gap:24px;margin-bottom:16px}.project-card-heading>span{font-size:10px}.project-card-heading h3{font-size:clamp(1.25rem,1.8vw,1.85rem);line-height:1.08;letter-spacing:-.045em}.project-card-footer{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:start}.project-card-footer p{line-height:1.55}@media(max-width:800px){.project-card-heading,.project-card-footer{display:block}}
+  </style>
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="nav-shell">
+    <a class="logo" href="#home" aria-label="Back to home">VS<span>°</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#research">Research</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta magnetic" href="mailto:vanessafatima.desouza@gmail.com">Let's talk <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-orbit orbit-one" aria-hidden="true"></div>
+      <div class="hero-orbit orbit-two" aria-hidden="true"></div>
+      <div class="eyebrow reveal"><span class="status-dot"></span> Let's create something amazing</div>
+      <h1 class="reveal">I turn complex<br>ideas into experiences<br><em>that feel simple and memorable.</em></h1>
+      <div class="hero-portrait reveal" aria-label="Vanessa Souza in a digital interface">
+        <div class="portrait-label">DESIGN · TECHNOLOGY · PEOPLE</div>
+        <img src="vanessa-hero.jpg" alt="Professional portrait of Vanessa Souza">
+        <span class="portrait-orbit" aria-hidden="true"></span>
+      </div>
+      <div class="hero-bottom reveal">
+        <p>Hi, I'm <strong>Vanessa Souza</strong> — a UX/UI Designer and Automation Engineer. I bring strategy, design, and technology together to build end-to-end digital products.</p>
+        <a href="#projects" class="round-link magnetic" aria-label="View projects"><span>View projects</span><b>↓</b></a>
+      </div>
+      <div class="scroll-note" aria-hidden="true">SCROLL TO EXPLORE <i></i></div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="section-index reveal">01 / ABOUT</div>
+      <div class="about-copy reveal">
+        <h2>From the first insight to a live product, <span class="rotating-phrase">every detail creates impact.</span></h2>
+      </div>
+      <div class="about-grid reveal">
+        <p>Engineering taught me systems thinking; design taught me empathy and how to listen. I work across the entire product lifecycle to create useful, beautiful, and viable solutions.</p>
+        <div class="skills" aria-label="Areas of expertise">
+          <span>UX Research</span><span>Product Design</span><span>UI Design</span><span>Prototyping</span><span>Design Systems</span><span>Front-end</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects section" id="projects">
+      <div class="projects-head reveal">
+        <div class="section-index">02 / SELECTED PROJECTS</div>
+        <p>A selection of real-world challenges where strategy, interface, and technology work together.</p>
+      </div>
+
+      <article class="project project-featured reveal" data-project="ima">
+        <div class="project-visual visual-ima">
+          <span class="case-preview-label">PROJECT IMAGE · SIDAGRO</span><img class="case-image" src="sidagro-mock.png" alt="Sidagro system interface"><div class="browser-mock">
+            <div class="browser-bar"><i></i><i></i><i></i><span>ima.mg.gov.br</span></div>
+            <div class="dashboard">
+              <aside><b>IMA</b><span></span><span></span><span></span><span></span></aside>
+              <div class="dash-main"><small>Agricultural Registry</small><h3>Overview</h3><div class="metrics"><b></b><b></b><b></b></div><div class="chart"></div></div>
+            </div>
+          </div>
+          <span class="float-tag tag-a">45+ components</span><span class="float-tag tag-b">3,500+ variables</span>
+        </div>
+        <div class="project-info">
+          <div><span class="project-number">01</span><span class="project-type">PRODUCT DESIGN · DESIGN SYSTEM</span></div>
+          <h3>IMA — Agricultural Registry</h3>
+          <p>Redesign of a complex government system, supported by a robust and scalable design system for multiple user profiles.</p>
+          <a class="text-link" href="case.html?project=ima">View case study <span>↗</span></a>
+        </div>
+      </article>
+
+      <div class="project-pair">
+        <article class="project reveal" data-project="alumni">
+          <div class="project-visual visual-alumni"><span class="case-preview-label">PROJECT IMAGE · ALUMNI</span><div class="phone"><div class="phone-screen"><small>ALUMNI ESAL</small><h4>Together, we make a difference.</h4><div class="donation">R$2M+<span>raised</span></div><button>I want to contribute</button></div></div><span class="shape flower">✦</span></div>
+          <div class="project-info"><div><span class="project-number">02</span><span class="project-type">UX/UI · COMMUNITY</span></div><h3>Alumni ESAL UFLA</h3><p>A platform that connects alumni and makes it easier to donate to educational projects.</p><a class="text-link" href="case.html?project=alumni">View case study <span>↗</span></a></div>
+        </article>
+        <article class="project reveal" data-project="eco">
+          <div class="project-visual visual-eco"><span class="case-preview-label">PROJECT IMAGE · ECO</span><div class="eco-card"><span>eco</span><small>carbon credits</small><div class="eco-chart"><i></i><i></i><i></i><i></i></div><b>+8.5M t CO₂</b></div><div class="eco-ring"></div></div>
+          <div class="project-info"><div><span class="project-number">03</span><span class="project-type">PRODUCT DESIGN · WEB</span></div><h3>Eco — Carbon Credits</h3><p>A transparent marketplace connecting conservation projects with companies seeking to offset emissions.</p><a class="text-link" href="case.html?project=eco">View case study <span>↗</span></a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="research section" id="research" aria-labelledby="research-title">
+      <div class="research-intro reveal">
+        <div class="section-index">03 / RESEARCH & PUBLICATIONS</div>
+        <h2 id="research-title">Design that also<br><span>creates knowledge.</span></h2>
+        <p>A research track focused on interaction, usability, and accessibility in digital public services.</p>
+      </div>
+      <div class="research-grid">
+        <article class="research-card research-card--feature reveal"><span>01 / INTERACTION</span><h3>Eye tracking</h3><p>A human-computer interaction study with IMA explores how people's visual attention reveals interface barriers and opportunities for improvement.</p><div class="research-card__links"><a href="tcc-rastreamento-ocular-ima.pdf" target="_blank" rel="noreferrer">Read paper <b>↗</b></a></div></article>
+        <article class="research-card reveal"><span>02 / USABILITY</span><h3>Heuristic evaluation in agile cycles</h3><p>The study compared system versions using Nielsen's heuristics and identified a 43% reduction in usability issues.</p><a href="https://link.springer.com/chapter/10.1007/978-3-032-05008-3_12" target="_blank" rel="noreferrer">Read publication <b>↗</b></a></article>
+        <article class="research-card reveal"><span>03 / ACCESSIBILITY</span><h3>LLMs and digital inclusion</h3><p>Research on language models and accessibility expands the conversation around more inclusive experiences in government systems.</p><small>LLMs · Accessibility · Public services</small></article>
+        <article class="research-card research-card--dark reveal"><span>04 / REQUIREMENTS ENGINEERING</span><h3>Requirements for better products</h3><p>This research explores how understanding, organizing, and communicating requirements can support product decisions and create solutions aligned with people's needs.</p><a href="https://sol.sbc.org.br/index.php/washes/article/view/43005" target="_blank" rel="noreferrer">View publication <b>↗</b></a></article>
+      </div>
+    </section>
+
+    <section class="process section">
+      <div class="section-index reveal">04 / HOW I WORK</div>
+      <h2 class="reveal">Clarity in the process.<br><span>Purpose in the outcome.</span></h2>
+      <div class="process-list reveal">
+        <div><b>01</b><h3>Discover</h3><p>Context, people, and the right problem.</p></div>
+        <div><b>02</b><h3>Define</h3><p>Strategy, flows, and priorities.</p></div>
+        <div><b>03</b><h3>Create</h3><p>Interfaces, prototypes, and validation.</p></div>
+        <div><b>04</b><h3>Deliver</h3><p>Handoff, follow-through, and evolution.</p></div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <p class="eyebrow reveal"><span class="status-dot"></span> Have a project in mind?</p>
+      <h2 class="reveal">Let's create something<br><em>amazing together.</em></h2>
+      <a class="contact-mail reveal magnetic" href="mailto:vanessafatima.desouza@gmail.com">vanessafatima.desouza@gmail.com <span>↗</span></a>
+      <footer><span>© 2026 Vanessa Souza</span><a href="https://www.linkedin.com/in/vanessa-souza-49a25028b" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="#home">Back to top ↑</a></footer>
+    </section>
+  </main>
+
+  <dialog class="case-modal">
+    <button class="modal-close" aria-label="Close">×</button>
+    <span class="modal-tag"></span><h2></h2><p></p>
+    <div class="modal-stats"></div>
+  </dialog>
+  <script src="script.js"></script>
+</body>
+</html>

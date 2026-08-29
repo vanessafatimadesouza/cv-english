@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Case — Vanessa Souza</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .case-page{max-width:1180px;margin:auto;padding:125px 32px 90px}.case-back{font-size:13px}.case-hero{padding:58px 0 48px;border-bottom:1px solid var(--line)}.case-hero h1{font:500 clamp(2.8rem,5.3vw,5.5rem)/.92 Manrope;letter-spacing:-.06em;max-width:1050px;margin:24px 0}.case-hero h1 em{font-family:Georgia,serif;color:var(--violet);font-weight:400}.case-intro{max-width:820px;color:var(--muted);font-size:19px;line-height:1.6;margin:52px 0 0;padding:28px 0 0;border-top:1px solid var(--line)}.case-intro::before{content:'SOBRE O PROJETO';display:block;color:var(--violet);font:600 11px Manrope;letter-spacing:.14em;margin-bottom:18px}.case-meta{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:40px 0 0}.case-meta div{border-top:1px solid var(--line);padding-top:15px}.case-meta b{display:block;font:600 36px Manrope}.case-meta span{font-size:12px;color:var(--muted)}.case-section{padding:70px 0}.case-section h2{font:500 clamp(2rem,4vw,4rem) Manrope;letter-spacing:-.05em;margin:0 0 25px}.case-section p{max-width:680px;color:var(--muted);font-size:18px;line-height:1.7}.case-visual{margin-top:45px;padding:28px;background:#dce8ec;border-radius:24px}.case-visual img{display:block;width:82%;margin:0 auto;border-radius:14px;box-shadow:0 24px 50px #24394026}.case-note{font-size:12px!important;margin-top:14px}.case-footer{display:flex;justify-content:space-between;border-top:1px solid var(--line);padding-top:25px}.case-page .section-index{color:var(--violet)}.tech-group{margin-top:55px;padding:42px 0;border-top:1px solid var(--line)}.tech-group h3{display:flex;align-items:center;gap:18px;font:600 30px Manrope;margin:0 0 12px}.tech-group h3::before{content:'</>';display:grid;place-items:center;width:62px;height:62px;border-radius:16px;background:var(--acid);color:var(--ink);font:700 22px monospace;animation:code-spin 5s ease-in-out infinite}@keyframes code-spin{0%,75%{transform:rotate(0)}85%{transform:rotate(12deg)}95%{transform:rotate(-12deg)}100%{transform:rotate(0)}}.tech-group p{font-size:16px!important;margin:0 0 22px}.tech-tags{display:flex;flex-wrap:wrap;gap:10px}.tech-tags span{padding:12px 16px;border:1px solid var(--ink);border-radius:999px;font:600 13px Manrope}
+    .context-section{display:grid;grid-template-columns:.85fr 1.45fr;column-gap:45px;align-items:center}.context-section .section-index{grid-column:1 / -1}.context-section h2{font-size:clamp(2rem,3.2vw,3.4rem);margin-bottom:0;grid-column:1;grid-row:2}.context-section>p{margin:0;grid-column:1;grid-row:3}.context-section .case-visual{grid-column:2;grid-row:2 / 4;margin-top:0}.ecosystem-case{background:#171714;color:#fff;border-radius:24px;padding:65px 45px}.ecosystem-case .section-index{color:var(--acid)}.ecosystem-case h2{grid-column:2;color:#fff}.ecosystem-case>p{grid-column:2}.ecosystem-case .case-visual{grid-column:1;grid-row:2 / 4}.ecosystem-case .case-visual{background:#dce8ec}.process-case{padding-top:45px}.process-case .case-meta{position:relative;grid-template-columns:repeat(3,1fr);gap:0;margin-top:45px}.process-case .case-meta::before{content:'';position:absolute;left:0;right:0;top:22px;border-top:1px solid var(--violet);opacity:.35}.process-case .case-meta div{position:relative;border:0;padding:0 28px 0 0}.process-case .case-meta div:not(:first-child){padding-left:28px}.process-case .case-meta b{position:relative;z-index:1;display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:var(--violet);color:white;font-size:15px;margin-bottom:24px}.process-case .case-meta span{display:block;font:500 17px/1.45 Manrope;color:var(--ink)}
+    @media(max-width:700px){.case-page{padding:115px 22px 60px}.case-hero{padding-top:45px}.case-meta{grid-template-columns:1fr 1fr}.case-meta b{font-size:27px}.case-visual{padding:12px}.case-footer{gap:20px;flex-wrap:wrap}.context-section{display:block}.context-section h2{margin-bottom:25px}}
+    @media(max-width:700px){.process-case .case-meta{display:block}.process-case .case-meta::before{top:0;bottom:0;left:22px;right:auto;border-top:0;border-left:1px solid var(--violet)}.process-case .case-meta div,.process-case .case-meta div:not(:first-child){padding:0 0 28px 58px}.process-case .case-meta b{position:absolute;left:0;top:0}.process-case .case-meta span{padding-top:8px}}
+    .case-carousel{position:relative;aspect-ratio:1.85;display:grid;place-items:center;overflow:hidden;cursor:grab;touch-action:pan-y}.case-carousel:active{cursor:grabbing}.case-carousel img{display:none!important;width:100%!important;height:100%!important;object-fit:contain!important}.case-carousel img.active{display:block!important;animation:slide-in .4s ease-out}@keyframes slide-in{from{opacity:.45;transform:translateX(42px)}to{opacity:1;transform:translateX(0)}}.carousel-controls{position:absolute;right:18px;bottom:18px;display:flex;gap:8px}.carousel-controls button{width:38px;height:38px;border:0;border-radius:50%;background:var(--ink);color:#fff;cursor:pointer;font-size:18px}.carousel-dots{position:absolute;left:18px;bottom:25px;display:flex;gap:6px}.carousel-dots i{width:7px;height:7px;border-radius:50%;background:#aaa}.carousel-dots i.active{background:var(--violet)}
+    @media(min-width:701px){.context-section .case-visual{padding:14px;background:#fff}.context-section .case-visual img{width:100%;height:auto;object-fit:contain;object-position:center;border-radius:12px}}
+    /* Hero editorial do case IMA */
+    body:has(.case-page) .nav-shell{display:none}
+    .case-page{max-width:none;padding:0 5.1vw 90px}
+    .case-back{position:absolute;top:27px;left:5.1vw;z-index:2;font-size:16px}
+    .case-hero{min-height:100svh;padding:77px 0 76px;display:flex;flex-direction:column;justify-content:flex-end}
+    .case-hero>.section-index{position:absolute;top:15px;right:5.1vw;color:var(--violet);font-size:14px;letter-spacing:.16em}
+    .case-hero>.section-index::after{content:'Governo de Minas Gerais · 2025';display:block;margin-top:7px;text-align:right;color:var(--muted);font:400 15px 'DM Sans';letter-spacing:0}
+    .case-hero h1{font-size:clamp(3.95rem,7.8vw,7.5rem);line-height:.87;letter-spacing:-.075em;max-width:980px;margin:0 0 24px}
+    .case-hero h1 em{display:block;font:400 clamp(2.4rem,4vw,4.1rem)/1.08 Georgia,serif;letter-spacing:-.035em;color:var(--violet);max-width:1080px;margin-top:28px}
+    .case-hero::before{content:'IMA';position:absolute;z-index:0;right:9%;top:21%;font:600 clamp(15rem,27vw,28rem)/.8 Manrope;letter-spacing:-.1em;color:transparent;-webkit-text-stroke:1px rgba(23,23,20,.07);pointer-events:none}
+    .case-hero>*{position:relative;z-index:1}
+    .case-scroll-note{position:absolute;right:1.2vw;top:50%;z-index:2;font:500 9px Manrope;letter-spacing:.16em;color:rgba(23,23,20,.38);writing-mode:vertical-rl}.case-scroll-note i{display:inline-block;width:auto;height:60px;border-left:1px solid rgba(23,23,20,.45);margin-top:12px}
+    .case-impact{width:calc(100% + 10.2vw);margin-left:-5.1vw;background:#121110;color:#f3f0e8}.impact-marquee{height:58px;display:flex;align-items:center;overflow:hidden;background:var(--violet);white-space:nowrap;font:600 15px Manrope;letter-spacing:.16em;color:#f3f0e8}.impact-marquee span{display:inline-block;padding-right:2.5rem;animation:impact-marquee 24s linear infinite}@keyframes impact-marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}.impact-stats{display:grid;grid-template-columns:repeat(3,1fr);max-width:1180px;margin:auto;padding:100px 5.1vw 105px}.impact-stat{padding:0 40px;border-left:1px solid rgba(243,240,232,.13)}.impact-stat:first-child{border-left:0;padding-left:0}.impact-stat b{display:block;font:700 clamp(3.3rem,5vw,5.4rem)/1 Manrope;letter-spacing:-.07em}.impact-stat:nth-child(2) b{color:var(--acid)}.impact-stat span{display:block;margin-top:14px;color:#77736f;font-size:17px}
+    @media(max-width:700px){.case-page{padding:0 22px 60px}.case-back{top:22px;left:22px;font-size:14px}.case-hero{min-height:100svh;padding:100px 0 42px}.case-hero>.section-index{top:23px;right:0;font-size:10px;text-align:right}.case-hero>.section-index::after{font-size:11px}.case-hero h1{font-size:clamp(3.25rem,15vw,6rem);line-height:.9}.case-hero h1 em{font-size:clamp(2rem,8.3vw,3.2rem);line-height:1.08;margin-top:20px}}
+    @media(max-width:700px){.case-hero::before{font-size:clamp(10rem,38vw,15rem);right:-3%;top:25%;-webkit-text-stroke:.7px rgba(23,23,20,.06)}.case-scroll-note{display:none}}
+    .case-about{display:grid;grid-template-columns:.9fr 1.35fr;gap:5vw;padding:76px 3.1vw 82px}.case-about-label{color:var(--violet);font:600 14px Manrope;letter-spacing:.16em}.case-about-label b{display:block;margin-top:25px;color:var(--ink);font:700 24px Manrope;letter-spacing:0}.case-about p{margin:0;color:#27333d;font-size:18px;line-height:1.65;max-width:760px}
+    @media(max-width:700px){.case-about{display:block;padding:55px 0 60px}.case-about-label{font-size:11px}.case-about p{margin-top:38px;font-size:18px;line-height:1.55}}
+    .case-carousel{background:#fff;border-radius:12px}.case-carousel::before{content:'';position:absolute;z-index:2;left:0;right:0;top:0;height:42px;background:#f4f4f4;border-bottom:1px solid #ddd}.case-carousel::after{content:'';position:absolute;z-index:3;top:14px;left:18px;width:10px;height:10px;border-radius:50%;background:#ff5f57;box-shadow:18px 0 #ffbd2e,36px 0 #28c840}.case-carousel img{height:calc(100% - 42px)!important;margin-top:42px}
+    .context-section .case-visual{padding:0;background:transparent}.case-carousel{box-shadow:0 26px 60px rgba(36,57,64,.24)}.carousel-dots{display:none}
+    #case-content>.context-section{display:grid;grid-template-columns:1fr 1.55fr;column-gap:7vw;align-items:start;padding:92px 3.1vw 80px;position:relative}#case-content>.context-section>.section-index{grid-column:1/-1;grid-row:1;margin-bottom:34px}#case-content>.context-section>h2{grid-column:1;grid-row:2;font-size:clamp(3rem,5vw,5.2rem);line-height:.94;margin:0}#case-content>.context-section>p{grid-column:2;grid-row:2;margin:6px 0 0;font-size:21px;line-height:1.55}#case-content>.context-section>.case-visual{grid-column:1/-1;grid-row:3;margin-top:76px;position:relative}#case-content>.context-section>.case-visual::before{content:'INTERFACE DO SISTEMA';position:absolute;z-index:5;top:-16px;left:30px;padding:7px 16px;border-radius:999px;background:var(--violet);color:#fff;font:600 12px Manrope;letter-spacing:.12em}
+    @media(max-width:700px){#case-content>.context-section{display:block;padding:65px 0 55px}#case-content>.context-section>.section-index{margin-bottom:28px}#case-content>.context-section>h2{font-size:clamp(2.8rem,13vw,4.4rem)}#case-content>.context-section>p{margin-top:25px;font-size:18px}#case-content>.context-section>.case-visual{margin-top:55px}#case-content>.context-section>.case-visual::before{left:16px;font-size:10px}}
+    #case-content>.context-section{display:grid;grid-template-columns:.85fr 1.45fr;column-gap:45px;align-items:center;padding:70px 0}#case-content>.context-section>.section-index{grid-column:1/-1;grid-row:1;margin-bottom:0}#case-content>.context-section>h2{grid-column:1;grid-row:2;font-size:clamp(2rem,3.2vw,3.4rem);line-height:1.03;margin:0 0 25px}#case-content>.context-section>p{grid-column:1;grid-row:3;margin:0;font-size:18px}#case-content>.context-section>.case-visual{grid-column:2;grid-row:2 / 4;margin-top:0}#case-content>.context-section>.case-visual::before{display:none}
+    @media(max-width:700px){#case-content>.context-section{display:block;padding:70px 0}#case-content>.context-section>.case-visual{margin-top:45px}}
+    #case-content>.ecosystem-case{display:grid;grid-template-columns:1fr 1.45fr;column-gap:7vw;align-items:center;padding:65px 45px;background:#171714;color:#fff;border-radius:24px;margin-top:86px}#case-content>.ecosystem-case>.section-index{grid-column:1/-1;grid-row:1;color:var(--acid)}#case-content>.ecosystem-case>h2{grid-column:1;grid-row:2;color:#fff;font-size:clamp(2.8rem,4.6vw,5rem);line-height:.98;margin:0 0 25px}#case-content>.ecosystem-case>p{grid-column:1;grid-row:3;color:#c8c8c1;margin:0;font-size:18px;line-height:1.6}#case-content>.ecosystem-case>.case-visual{grid-column:2;grid-row:2 / 4;margin-top:0;padding:0;background:transparent;overflow:hidden}#case-content>.ecosystem-case>.case-visual img{width:100%;height:auto;max-height:620px;object-fit:contain;border-radius:14px;box-shadow:0 24px 55px rgba(0,0,0,.3)}
+    #case-content>.ecosystem-case{grid-template-columns:.85fr 1.45fr;column-gap:45px}#case-content>.ecosystem-case>h2{grid-column:2;grid-row:2;color:#fff;font-size:clamp(2rem,3.2vw,3.4rem);line-height:1.03;margin:0 0 25px}#case-content>.ecosystem-case>p{grid-column:2;grid-row:3;color:#c8c8c1;margin:0;font-size:18px;line-height:1.7}#case-content>.ecosystem-case>.case-visual{grid-column:1;grid-row:2 / 4;aspect-ratio:1.13;overflow:hidden;margin-top:20px}#case-content>.ecosystem-case>.case-visual img{width:100%;height:100%;max-height:none;object-fit:cover;object-position:center bottom}
+    .connection-map{position:relative;width:100%;aspect-ratio:1.18;overflow:hidden;border-radius:16px;background:#cfd0d0;box-shadow:0 24px 55px rgba(0,0,0,.3);isolation:isolate;cursor:crosshair}
+    .connection-map>img{width:100%;height:100%;object-fit:cover;object-position:center bottom;display:block;filter:saturate(.82) contrast(.96)}
+    .connection-map::after{content:'';position:absolute;inset:0;z-index:1;background:radial-gradient(circle at var(--mx,52%) var(--my,48%),transparent 0 13%,rgba(15,17,18,.08) 22%,rgba(15,17,18,.3) 100%);pointer-events:none;transition:background .25s ease}
+    .connection-map__spotlight{position:absolute;z-index:3;left:var(--mx,52%);top:var(--my,48%);width:190px;height:190px;border:3px solid rgba(255,255,255,.92);border-radius:50%;transform:translate(-50%,-50%);box-shadow:0 0 0 999px rgba(13,16,17,.08),0 12px 28px rgba(0,0,0,.32);pointer-events:none;transition:left .25s ease,top .25s ease}
+    .connection-map__node{position:absolute;z-index:4;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:#f44b3e;color:#fff;font:700 14px Manrope;border:4px solid #1e2528;box-shadow:0 0 0 5px rgba(255,255,255,.45),0 7px 18px rgba(0,0,0,.4);transform:translate(-50%,-50%);transition:transform .25s ease,background .25s ease}
+    .connection-map__node:hover{background:var(--violet);transform:translate(-50%,-50%) scale(1.16)}
+    .connection-map__node--one{left:63%;top:14%}.connection-map__node--two{left:35%;top:42%}.connection-map__node--three{left:18%;top:86%;background:#177ee8}
+    .connection-map__label{position:absolute;z-index:4;padding:10px 13px;border-radius:10px;background:rgba(20,22,24,.9);color:#fff;font:500 11px/1.25 Manrope;letter-spacing:.03em;box-shadow:0 9px 20px rgba(0,0,0,.2);pointer-events:none}.connection-map__label strong{display:block;color:var(--acid);font-size:17px;letter-spacing:-.03em;margin-bottom:3px}.connection-map__label--top{right:4%;top:8%}.connection-map__label--bottom{left:2%;bottom:4%}
+    .connection-map__legend{position:absolute;z-index:4;left:18px;top:18px;display:flex;gap:7px;align-items:center;color:#273035;font:600 9px Manrope;letter-spacing:.12em;text-transform:uppercase}.connection-map__legend i{width:7px;height:7px;background:#5aa7ef;border-radius:50%;box-shadow:0 0 0 3px #ffffff99}
+    #case-content>.ecosystem-case>.ecosystem-copy{grid-column:2;grid-row:2 / 4;display:flex;flex-direction:column;justify-content:center;gap:64px}
+    #case-content>.ecosystem-case>.ecosystem-copy>h2{margin:0;color:#fff;font-size:clamp(2rem,3.2vw,3.4rem);line-height:1.03;max-width:520px}
+    #case-content>.ecosystem-case>.ecosystem-copy>p{margin:0;color:#c8c8c1;font-size:18px;line-height:1.7;max-width:590px}
+    @media(max-width:700px){.connection-map{aspect-ratio:.95}.connection-map__spotlight{width:130px;height:130px}.connection-map__label{font-size:9px;padding:8px 10px}.connection-map__label strong{font-size:14px}}
+    @media(max-width:700px){#case-content>.ecosystem-case>.ecosystem-copy{display:block}.ecosystem-copy>p{margin-top:28px!important}}
+    .case-note{display:none!important}
+    #case-content>.process-case{padding:0;background:#f3f0e8}#case-content>.process-case>.section-index,#case-content>.process-case>h2{display:none}#case-content>.process-case>.case-meta{display:grid;grid-template-columns:150px 1fr;gap:0;margin:0}#case-content>.process-case>.case-meta::before{display:none}#case-content>.process-case>.case-meta>div{display:grid;grid-template-columns:150px 1fr auto;align-items:center;column-gap:28px;min-height:205px;padding:36px 5.1vw;border-top:1px solid rgba(23,23,20,.12)}#case-content>.process-case>.case-meta b{width:auto;height:auto;margin:0;background:none;color:#c8c2ee;font:700 76px/1 Manrope;letter-spacing:-.08em}#case-content>.process-case>.case-meta span{padding:0;display:block;color:#5d5b58;font:400 17px/1.5 'DM Sans'}#case-content>.process-case>.case-meta span::first-line{color:var(--ink);font:700 30px/1 Manrope}#case-content>.process-case>.case-meta span br{display:none}#case-content>.process-case>.case-meta>div:nth-child(1) span::before{content:'Pesquisa';display:block;color:var(--ink);font:700 30px/1 Manrope;margin-bottom:14px}#case-content>.process-case>.case-meta>div:nth-child(1) span{font-size:0}#case-content>.process-case>.case-meta>div:nth-child(1) span::after{content:'Análise de requisitos governamentais, entrevistas com usuários e mapeamento de fluxos existentes para entender a real complexidade do sistema.';font:400 17px/1.5 'DM Sans'}#case-content>.process-case>.case-meta>div:nth-child(2) span{font-size:0}#case-content>.process-case>.case-meta>div:nth-child(2) span::before{content:'Arquitetura';display:block;color:var(--ink);font:700 30px/1 Manrope;margin-bottom:14px}#case-content>.process-case>.case-meta>div:nth-child(2) span::after{content:'Estruturação completa do design system: hierarquia de tokens, anatomia de componentes, variantes e documentação para times futuros.';font:400 17px/1.5 'DM Sans'}#case-content>.process-case>.case-meta>div:nth-child(3) span{font-size:0}#case-content>.process-case>.case-meta>div:nth-child(3) span::before{content:'Prototipagem';display:block;color:var(--ink);font:700 30px/1 Manrope;margin-bottom:14px}#case-content>.process-case>.case-meta>div:nth-child(3) span::after{content:'Conexões avançadas no Figma e protótipos em código com React e TypeScript, permitindo validar fluxos reais com stakeholders.';font:400 17px/1.5 'DM Sans'}#case-content>.process-case>.case-meta>div::after{content:'Descoberta';justify-self:end;border:1px solid #c8c2ee;border-radius:999px;padding:11px 20px;color:var(--violet);font:500 15px Manrope}#case-content>.process-case>.case-meta>div:nth-child(2)::after{content:'Estrutura'}#case-content>.process-case>.case-meta>div:nth-child(3)::after{content:'Validação'}
+    @media(max-width:700px){#case-content>.process-case>.case-meta>div{grid-template-columns:72px 1fr;gap:16px;padding:28px 0;min-height:0}#case-content>.process-case>.case-meta b{font-size:48px}#case-content>.process-case>.case-meta span::before,#case-content>.process-case>.case-meta>div:nth-child(n) span::before{font-size:22px}#case-content>.process-case>.case-meta>div::after{grid-column:2;justify-self:start;margin-top:14px}}
+    #case-content>.process-case>.case-meta{display:block;grid-template-columns:none!important}#case-content>.process-case>.case-meta>div{display:grid;grid-template-columns:150px minmax(0,1fr) auto;align-items:center;column-gap:28px}#case-content>.process-case>.case-meta>div>span{font-size:0!important}
+    #case-content>.process-case>.section-index{display:block;padding:78px 5.1vw 0;color:var(--violet)}#case-content>.process-case>h2{display:block;padding:20px 5.1vw 55px;margin:0;font-size:clamp(2.8rem,5vw,5rem);line-height:.95}
+    @media(max-width:700px){#case-content>.ecosystem-case{display:block;padding:45px 22px}#case-content>.ecosystem-case>.case-visual{margin-top:35px}}
+    #case-content>.process-case>.case-meta>div{position:relative;overflow:hidden;transition:background .3s ease,transform .3s ease,padding-left .3s ease}
+    #case-content>.process-case>.case-meta>div::before{content:'';position:absolute;inset:0 auto 0 0;width:4px;background:var(--violet);transform:scaleY(0);transform-origin:center;transition:transform .3s ease}
+    #case-content>.process-case>.case-meta>div:hover,#case-content>.process-case>.case-meta>div:focus-within{background:#eeecfa;transform:translateX(8px)}
+    #case-content>.process-case>.case-meta>div:hover::before,#case-content>.process-case>.case-meta>div:focus-within::before{transform:scaleY(1)}
+    #case-content>.process-case>.case-meta>div:hover b,#case-content>.process-case>.case-meta>div:focus-within b{color:var(--violet);transform:scale(1.05)}
+    #case-content>.process-case>.case-meta>div:hover::after,#case-content>.process-case>.case-meta>div:focus-within::after{background:var(--violet);color:#fff}
+    #case-content>.process-case>.case-meta b{transition:color .3s ease,transform .3s ease}
+    #case-content>.tech-group{width:calc(100% + 10.2vw);margin-left:-5.1vw;margin-top:86px;padding:70px 10.5vw 76px;background:var(--acid);border:0;display:grid;grid-template-columns:1.25fr 1fr;column-gap:9vw;align-items:start}
+    #case-content>.tech-group>.section-index{grid-column:1/-1;color:#5c7020;margin-bottom:18px}
+    #case-content>.tech-group>h3{grid-column:1;font-size:clamp(2.2rem,4vw,4.2rem);line-height:.98;letter-spacing:-.055em;margin:0;display:block;max-width:570px}
+    #case-content>.tech-group>h3::before{display:none}
+    #case-content>.tech-group>p{grid-column:2;margin:4px 0 18px;max-width:390px;font-size:15px!important;line-height:1.5}
+    #case-content>.tech-group>.tech-tags{grid-column:2;gap:8px}
+    #case-content>.tech-group>.tech-tags span{padding:7px 12px;border:0;background:#c5ed27;font-size:11px}
+    .case-quote{width:calc(100% + 10.2vw);margin-left:-5.1vw;padding:100px 10vw 105px;background:#171714;color:#f3f0e8;text-align:center}
+    .case-quote p{max-width:760px;margin:0 auto;font:italic 400 clamp(2.2rem,4vw,4.2rem)/1.08 Georgia,serif;letter-spacing:-.035em;color:#d6d2ce}
+    .case-quote::after{content:'';display:block;width:70px;border-top:2px solid var(--violet);margin:38px auto 0}
+    #case-content>.case-footer{width:calc(100% + 10.2vw);margin-left:-5.1vw;margin-top:0;padding:34px 5.1vw 38px;border-top:1px solid rgba(23,23,20,.16);font:500 13px Manrope;color:#4d4b47}
+    .partnership-case{width:calc(100% + 10.2vw);margin-left:-5.1vw;padding:56px 5.1vw 58px;background:var(--paper);color:var(--ink);text-align:center;border-top:1px solid var(--line)}.partnership-case .section-index{color:var(--violet);margin-bottom:14px}.partnership-case h2{margin:0;font:600 clamp(2.2rem,4.8vw,4.4rem)/.95 Manrope;letter-spacing:-.07em;color:var(--ink)}.partnership-logos{display:block;width:min(650px,90%);height:auto;margin:38px auto 0}
+    #case-content>.case-footer a{transition:color .25s ease,transform .25s ease;display:inline-block}
+    #case-content>.case-footer a:hover{color:var(--violet);transform:translateY(-2px)}
+    @media(max-width:700px){#case-content>.tech-group{display:block;width:calc(100% + 44px);margin-left:-22px;padding:58px 22px}.tech-group>h3{margin-bottom:32px!important}.tech-group>p{margin-top:0!important}.case-quote{width:calc(100% + 44px);margin-left:-22px;padding:70px 22px 78px}.case-quote p{font-size:clamp(2rem,9vw,3.2rem)}}
+    @media(max-width:700px){.partnership-case{width:calc(100% + 44px);margin-left:-22px;padding:46px 22px 50px}.partnership-logos{width:100%;margin-top:28px}}
+    /* Overrides finais do case Alumni */
+    /* Fundo em tela cheia; conteúdo alinhado à coluna interna da página. */
+    #case-content>.alumni-hero{margin-left:-5.1vw;margin-right:-5.1vw;padding-left:5.1vw;padding-right:5.1vw}
+    body.project-alumni .case-hero::before,body.project-alumni .case-hero>.section-index::after{content:none}
+    body.project-eco .case-hero::before,body.project-eco .case-hero>.section-index::after{content:none}
+    #case-content>.eco-hero{margin-left:-5.1vw;margin-right:-5.1vw;padding-left:5.1vw;padding-right:5.1vw;background:linear-gradient(145deg,#edf3ef,#f3f0e8 60%,#e2eee5)}
+    #case-content>.eco-hero h1 em{color:#155642}.eco-showcase{padding:96px 0}.eco-showcase__intro{display:grid;grid-template-columns:.82fr 1.45fr;gap:6vw;align-items:start;margin-bottom:54px}.eco-showcase h2{margin:0!important;font-size:clamp(3rem,5vw,5.2rem)!important;line-height:.94}.eco-showcase__intro p{margin:4px 0 0!important;max-width:680px}.eco-shot-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;max-width:1040px;margin:0 auto}.eco-shot-grid figure{margin:0;border:1px solid rgba(23,23,20,.13);border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 18px 42px rgba(16,58,44,.12)}.eco-shot-grid figure:first-child{grid-column:1/-1}.eco-shot-grid img{display:block;width:100%;height:auto}.eco-shot-grid figcaption{padding:13px 16px 16px;color:var(--muted);font-size:13px}.eco-dashboard{background:#155642;color:#fff;margin-left:-5.1vw;margin-right:-5.1vw;padding:100px 5.1vw}.eco-dashboard h2{color:#fff!important;max-width:700px}.eco-dashboard>p{color:#d2e6dc!important;margin:26px 0 52px!important}.eco-dashboard .eco-shot-grid figure{box-shadow:0 22px 54px rgba(0,0,0,.25)}
+    /* Cabeçalho compartilhado dos cases: contexto editorial à esquerda e produto à direita. */
+    body:has(.case-page) .nav-shell{display:flex;position:absolute;top:0;left:0;transform:none;width:100%;height:88px;padding:0 32px;border:0;border-bottom:1px solid rgba(255,255,255,.13);border-radius:0;background:transparent;box-shadow:none;color:#f3f0e8}body:has(.case-page) .nav-shell .logo span{color:var(--acid)}body:has(.case-page) .nav-shell .nav-cta{background:var(--acid);color:var(--ink);border-radius:999px}.project-ima{--cover-bg:#173b43;--cover-accent:#dce8ec}.project-alumni{--cover-bg:#5745a8;--cover-accent:#e5dfff}.project-eco{--cover-bg:#153b2a;--cover-accent:#edf3ef}.project-cover{min-height:720px;margin:0 -5.1vw;padding:145px max(5.1vw,32px) 62px;background:var(--cover-bg);color:#f3f0e8}.project-cover__inner{max-width:1380px;margin:0 auto}.project-cover__back{display:inline-block;margin-bottom:52px;color:rgba(243,240,232,.68);font:600 15px Manrope}.project-cover__number{float:right;color:rgba(243,240,232,.5);font:600 12px Manrope;letter-spacing:.16em}.project-cover__grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(460px,1.12fr);align-items:center;gap:clamp(50px,9vw,150px)}.project-cover h1{margin:0;font:700 clamp(4.5rem,9vw,9.2rem)/.78 Manrope;letter-spacing:-.1em;color:var(--cover-accent)}.project-cover__lead{max-width:530px;margin:58px 0 48px;color:rgba(243,240,232,.68);font:400 clamp(1.45rem,2vw,2rem)/1.45 Georgia,serif}.project-cover__meta{display:flex;flex-wrap:wrap;gap:26px;border-top:1px solid rgba(243,240,232,.18);padding-top:20px}.project-cover__meta div{min-width:105px}.project-cover__meta span{display:block;margin-bottom:7px;color:rgba(243,240,232,.45);font:600 10px Manrope;letter-spacing:.14em}.project-cover__meta b{font:600 14px/1.35 Manrope}.project-cover__media{padding:14px;background:#f6f5f0;border-radius:20px;box-shadow:0 32px 70px rgba(0,0,0,.28);transform:rotate(-1.3deg)}.project-cover__media img{display:block;width:100%;aspect-ratio:1.545;object-fit:cover;border-radius:9px}.project-ima .project-cover__media{background:#dce8ec}.project-alumni .project-cover__media{background:#e5dfff}.project-eco .project-cover__media{background:#edf3ef}@media(min-width:701px) and (max-width:1280px){.project-cover{min-height:620px;padding-top:122px}.project-cover__back{margin-bottom:38px}.project-cover__grid{grid-template-columns:minmax(0,.9fr) minmax(390px,1.08fr);gap:6vw}.project-cover h1{font-size:clamp(4rem,8vw,6.5rem)}.project-cover__lead{margin:40px 0 34px;font-size:1.45rem}.project-cover__meta{gap:16px}.project-cover__media{padding:11px}}@media(max-width:700px){body:has(.case-page) .nav-shell{height:70px;padding:0 22px}body:has(.case-page) .nav-shell nav{display:none}.project-cover{min-height:0;margin:0 -22px;padding:105px 22px 48px}.project-cover__back{margin-bottom:36px;font-size:13px}.project-cover__number{font-size:10px}.project-cover__grid{display:block}.project-cover h1{font-size:clamp(4rem,19vw,6.3rem)}.project-cover__lead{margin:34px 0;font-size:1.4rem}.project-cover__meta{gap:16px}.project-cover__media{margin-top:42px;padding:9px;border-radius:14px}}
+    .project-cover__media{padding:0!important;background:transparent!important;border-radius:14px;overflow:hidden}.project-cover__media img{border-radius:14px}@media(max-width:700px){.project-cover__media{border-radius:12px}.project-cover__media img{border-radius:12px}}
+    /* Paleta dos cases: neutros e violeta da marca; verde reservado à Eco. */
+    .project-ima{--cover-bg:var(--ink);--cover-accent:var(--paper)}.project-alumni{--cover-bg:var(--violet);--cover-accent:var(--paper)}
+    #case-content>.eco-about{display:grid;grid-template-columns:.82fr 1.45fr;gap:6vw;align-items:start;padding:92px 0;border-bottom:1px solid rgba(21,86,66,.18)}.eco-about h2{margin:20px 0 0;font:500 clamp(3rem,5.4vw,5.4rem)/.92 Manrope;letter-spacing:-.07em}.eco-about p{max-width:760px;margin:0;color:#273f35;font-size:clamp(18px,1.55vw,21px);line-height:1.65}.eco-about p+p{margin-top:22px}@media(max-width:700px){#case-content>.eco-about{display:block;padding:65px 0}.eco-about h2{margin-top:18px}.eco-about p{margin-top:36px;font-size:17px}}
+    #case-content>.eco-features{padding:86px 0}.eco-features__head{display:grid;grid-template-columns:.82fr 1.45fr;gap:6vw;align-items:end;margin-bottom:44px}.eco-features h2{margin:20px 0 0;font:500 clamp(3rem,5.4vw,5.4rem)/.92 Manrope;letter-spacing:-.07em}.eco-features__head>p{margin:0;max-width:650px;color:var(--muted);font-size:18px;line-height:1.6}.eco-features__grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid rgba(21,86,66,.28);border-left:1px solid rgba(21,86,66,.28)}.eco-feature{min-height:250px;padding:28px;border-right:1px solid rgba(21,86,66,.28);border-bottom:1px solid rgba(21,86,66,.28)}.eco-feature b{display:block;color:#155642;font:600 12px Manrope;letter-spacing:.14em}.eco-feature h3{margin:62px 0 14px;font:600 25px/1.05 Manrope;letter-spacing:-.045em}.eco-feature p{margin:0;color:#536158;font-size:15px;line-height:1.55}@media(max-width:700px){#case-content>.eco-features{padding:65px 0}.eco-features__head{display:block;margin-bottom:34px}.eco-features__head>p{margin-top:30px;font-size:17px}.eco-features__grid{grid-template-columns:1fr}.eco-feature{min-height:0;padding:26px 22px}.eco-feature h3{margin:38px 0 12px}}
+    #case-content>.context-section:has(.ima-screen-gallery)>.case-visual{grid-column:1/-1;grid-row:4;margin-top:54px;padding:0;background:transparent}.ima-screen-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}.ima-screen-gallery figure{margin:0;overflow:hidden;border:1px solid rgba(23,23,20,.13);border-radius:16px;background:#fff;box-shadow:0 18px 42px rgba(36,57,64,.12)}.ima-screen-gallery__featured{grid-column:1/-1}.ima-screen-gallery img{display:block;width:100%;height:auto}.ima-screen-gallery figcaption{padding:13px 16px 16px;color:var(--muted);font-size:13px}@media(max-width:700px){#case-content>.context-section:has(.ima-screen-gallery)>.case-visual{margin-top:42px}.ima-screen-gallery{grid-template-columns:1fr;gap:20px}.ima-screen-gallery__featured{grid-column:auto}}
+    .project-marquee{width:calc(100% + 10.2vw);margin-left:-5.1vw;height:58px;display:flex;align-items:center;overflow:hidden;white-space:nowrap;color:#f3f0e8}.project-marquee span{display:inline-block;padding-right:2.5rem;font:600 15px Manrope;letter-spacing:.16em;animation:impact-marquee 24s linear infinite}.project-marquee--alumni{background:#6555e8}.project-marquee--eco{background:#155642;color:var(--acid)}@media(max-width:700px){.project-marquee{width:calc(100% + 44px);margin-left:-22px;height:50px}.project-marquee span{font-size:11px}}
+    @media(min-width:701px) and (max-width:1280px){#case-content>.eco-hero{min-height:min(680px,76svh);padding-top:100px;padding-bottom:62px}#case-content>.eco-hero h1{font-size:clamp(3.45rem,6.5vw,5.4rem)}.eco-showcase{padding:70px 0}.eco-showcase__intro{gap:4vw;margin-bottom:38px}.eco-showcase h2{font-size:clamp(2.6rem,4.4vw,4.1rem)!important}.eco-shot-grid{max-width:900px;gap:20px}.eco-dashboard{padding-top:74px;padding-bottom:74px}.eco-dashboard>p{margin-bottom:38px!important}}
+    #case-content>.alumni-impact{width:calc(100% + 10.2vw);max-width:none;margin:0 0 0 -5.1vw;padding:115px clamp(22px,8vw,120px);background:#6555e8!important;color:#fff;border:0}
+    #case-content>.alumni-impact>h2{max-width:820px;margin:12px 0 0!important;font:400 italic clamp(3rem,6vw,6.2rem)/.92 Georgia,serif!important;letter-spacing:-.055em}
+    #case-content>.alumni-impact>p{max-width:820px;margin:38px 0 0!important;font:400 20px/1.6 'DM Sans',sans-serif!important;color:#e0dcff!important}
+    #case-content>.alumni-impact>.alumni-gallery{max-width:1180px;margin:82px 0 0!important}
+    #case-content>.alumni-principles{width:calc(100% + 10.2vw);max-width:none;margin:0 0 0 -5.1vw;padding:82px max(8vw,40px);background:#d7ff54}
+    #case-content>.alumni-about{max-width:1180px;margin:0 auto;padding:86px 3.1vw 92px;display:grid;grid-template-columns:.8fr 1.5fr;gap:7vw;border-bottom:1px solid var(--line)}#case-content>.alumni-about .section-index{color:var(--violet)}#case-content>.alumni-about h2{margin:24px 0 0;font:500 clamp(3rem,6vw,5.8rem)/.9 Manrope;letter-spacing:-.07em}#case-content>.alumni-about h2 em{font:400 italic clamp(2.6rem,5vw,5rem)/1 Georgia,serif;color:var(--violet)}#case-content>.alumni-about p{margin:0;max-width:720px;color:var(--muted);font-size:18px;line-height:1.65}
+    #case-content>.alumni-context{width:100%;max-width:1380px;margin:0 auto;padding:100px 5.5vw 90px;display:grid;grid-template-columns:.82fr 1.45fr;column-gap:6vw;align-items:start}
+    #case-content>.alumni-context>h2{grid-column:1;grid-row:2;margin:0!important}
+    #case-content>.alumni-context>p{grid-column:1;grid-row:3;margin:28px 0 0!important}
+    #case-content>.alumni-context>.alumni-gallery{grid-column:2;grid-row:2/4;margin:0!important}
+    @media(max-width:700px){#case-content>.alumni-hero,#case-content>.eco-hero{margin-left:-22px;margin-right:-22px;padding-left:22px;padding-right:22px}body.project-alumni .case-hero>.section-index{top:62px;left:22px;right:auto;text-align:left}.eco-showcase{padding:65px 0}.eco-showcase__intro{display:block;margin-bottom:38px}.eco-showcase__intro p{margin-top:24px!important}.eco-shot-grid{grid-template-columns:1fr;gap:20px}.eco-shot-grid figure:first-child{grid-column:auto}.eco-dashboard{margin-left:-22px;margin-right:-22px;padding:68px 22px}#case-content>.alumni-impact{width:calc(100% + 44px);margin-left:-22px;padding:72px 22px}#case-content>.alumni-impact>h2{font-size:clamp(3.2rem,15vw,6rem)!important}#case-content>.alumni-impact>p{margin-left:0!important}#case-content>.alumni-context{display:block;padding:65px 22px}#case-content>.alumni-context>.alumni-gallery{margin-top:46px!important}#case-content>.alumni-principles{width:calc(100% + 44px);margin-left:-22px;padding:60px 22px}#case-content>.alumni-about{display:block;padding:62px 22px 68px}#case-content>.alumni-about p{margin-top:36px;font-size:17px}}
+    /* Padronização entre cases: mesma largura, ritmo e leitura. */
+    .case-page{max-width:none;padding-inline:max(32px,calc((100vw - 1180px)/2))}
+    .project-cover{width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw)}
+    #case-content>.case-section:not(.alumni-impact):not(.eco-dashboard),#case-content>.case-about,#case-content>.tech-group{max-width:1180px;margin-inline:auto}
+    .case-section{padding-block:clamp(64px,7vw,96px)}
+    .case-section p,.case-about p{max-width:68ch}
+    .case-section h2{line-height:1;max-width:18ch}
+    .case-footer{max-width:1180px;margin-inline:auto;padding-block:28px 10px}
+    .case-footer a{font-weight:600}
+    .case-footer a:focus-visible,.case-back:focus-visible{outline:2px solid var(--acid);outline-offset:5px}
+    figure img{background:#fff}
+    figcaption{line-height:1.45}
+    @media(min-width:701px) and (max-width:1100px){.case-page{padding-inline:32px}.project-cover{margin-inline:-32px}.project-cover__grid{grid-template-columns:minmax(0,.82fr) minmax(360px,1.05fr);gap:5vw}.project-cover h1{font-size:clamp(3.8rem,7.5vw,5.8rem)}.case-section{padding-block:72px}.impact-stats{padding-inline:32px}}
+    @media(max-width:700px){.case-page{padding-inline:22px}.case-section{padding-block:58px}.case-section h2{font-size:clamp(2.1rem,10vw,3.2rem)}.case-section p,.case-about p{font-size:16px;line-height:1.65}.case-footer{padding-top:24px}.project-cover__lead{font-size:1.22rem;line-height:1.45}.project-cover__media img{aspect-ratio:4/3}.impact-stats{grid-template-columns:1fr}.impact-stat{min-height:150px}.impact-stat b{font-size:clamp(3rem,15vw,5rem)}}
+    @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+    #case-content>.project-marquee{width:100vw;margin-left:calc(50% - 50vw);margin-right:calc(50% - 50vw)}
+    body.project-ima #case-content>.case-impact,body.project-ima #case-content>.tech-group,body.project-ima #case-content>.case-quote,body.project-ima #case-content>.partnership-case,body.project-ima #case-content>.case-footer{position:relative;left:50%;width:100vw!important;margin-left:0!important;margin-right:0!important;transform:translateX(-50%)}
+    #case-content>.tech-group,#case-content>.case-quote,#case-content>.partnership-case{position:relative;left:50%;width:100vw!important;max-width:none!important;margin-left:0!important;margin-right:0!important;transform:translateX(-50%)}
+    /* IMA: transição mais curta entre a apresentação e o contexto. */
+    body.project-ima .case-about{padding-bottom:24px}
+    body.project-ima #case-content>.context-section{padding-top:40px}
+    @media(max-width:700px){body.project-ima .case-about{padding-bottom:20px}body.project-ima #case-content>.context-section{padding-top:34px}}
+    /* Eco: hierarquia editorial mais compacta e leitura em grupos. */
+    body.project-eco #case-content>.eco-showcase,body.project-eco #case-content>.eco-features{padding-top:72px;padding-bottom:76px}
+    body.project-eco .eco-showcase__intro,body.project-eco .eco-features__head{grid-template-columns:minmax(0,.9fr) minmax(320px,1.1fr);gap:clamp(34px,6vw,84px);margin-bottom:42px}
+    body.project-eco .eco-showcase h2,body.project-eco .eco-features h2{max-width:11ch;font-size:clamp(2.35rem,3.5vw,3.8rem)!important;line-height:1!important;letter-spacing:-.055em}
+    body.project-eco .eco-showcase__intro p,body.project-eco .eco-features__head>p{max-width:52ch;font-size:17px;line-height:1.6}
+    body.project-eco .eco-shot-grid{max-width:100%;gap:20px}
+    body.project-eco .eco-features__grid{margin-top:8px}
+    body.project-eco .eco-feature{min-height:220px;padding:26px}
+    body.project-eco .eco-feature h3{margin:40px 0 12px;font-size:23px;line-height:1.08}
+    body.project-eco .eco-feature p{font-size:14px;line-height:1.55}
+    body.project-eco .eco-showcase__intro{grid-template-columns:1fr 1fr}
+    body.project-eco .eco-showcase__intro h2{max-width:none;white-space:nowrap;font-size:clamp(2.25rem,3.15vw,3.45rem)!important}
+    body.project-eco #case-content>.eco-about{border-bottom:0}
+    body.project-alumni #case-content>.alumni-about h2{font-size:clamp(2.6rem,4.4vw,4.5rem)}
+    /* Alumni: as duas primeiras seções compartilham exatamente a mesma coluna editorial. */
+    body.project-alumni #case-content>.alumni-about,
+    body.project-alumni #case-content>.case-section.alumni-context{max-width:1600px!important;padding-left:clamp(28px,3.2vw,54px);padding-right:clamp(28px,3.2vw,54px)}
+    @media(max-width:700px){body.project-eco #case-content>.eco-showcase,body.project-eco #case-content>.eco-features{padding-top:56px;padding-bottom:58px}body.project-eco .eco-showcase__intro,body.project-eco .eco-features__head{display:block;margin-bottom:32px}body.project-eco .eco-showcase h2,body.project-eco .eco-features h2{font-size:clamp(2.45rem,11vw,3.5rem)!important;max-width:11ch}body.project-eco .eco-showcase__intro h2{max-width:none;white-space:nowrap;font-size:clamp(2rem,8.2vw,3rem)!important}body.project-eco .eco-showcase__intro p,body.project-eco .eco-features__head>p{margin-top:24px;font-size:16px}body.project-eco .eco-feature{min-height:0;padding:24px}}
+    /* Composição editorial das seções de produto da Eco. */
+    body.project-eco .eco-showcase__intro,body.project-eco .eco-features__head{position:relative;padding-top:25px;border-top:1px solid rgba(21,86,66,.26)}
+    body.project-eco .eco-showcase__intro>div,body.project-eco .eco-features__head>div{position:relative}
+    body.project-eco .eco-showcase__intro>div::after,body.project-eco .eco-features__head>div::after{content:'';position:absolute;top:-26px;left:0;width:58px;border-top:3px solid #155642}
+    body.project-eco .eco-showcase__intro p,body.project-eco .eco-features__head>p{align-self:end;margin-bottom:4px!important;padding-left:24px;border-left:2px solid rgba(21,86,66,.32);color:#405d51}
+    body.project-eco .eco-shot-grid figure{border-radius:12px;box-shadow:none;transition:transform .3s ease,box-shadow .3s ease}
+    body.project-eco .eco-shot-grid figure:hover{transform:translateY(-5px);box-shadow:0 18px 35px rgba(21,86,66,.15)}
+    body.project-eco .eco-shot-grid figcaption{padding:15px 17px 17px;font-size:12px;line-height:1.5}
+    body.project-eco .eco-features__grid{background:rgba(255,255,255,.34);border-color:rgba(21,86,66,.22)}
+    body.project-eco .eco-feature{display:flex;flex-direction:column;border-color:rgba(21,86,66,.22)}
+    body.project-eco .eco-feature b{width:max-content;padding:7px 9px;border-radius:999px;background:#e3eee6;color:#155642;font-size:10px}
+    body.project-eco .eco-feature h3{max-width:15ch;margin-top:auto;margin-bottom:14px}
+    body.project-eco .eco-feature p{max-width:34ch}
+    @media(max-width:700px){body.project-eco .eco-showcase__intro,body.project-eco .eco-features__head{padding-top:20px}body.project-eco .eco-showcase__intro>div::after,body.project-eco .eco-features__head>div::after{top:-21px}body.project-eco .eco-showcase__intro p,body.project-eco .eco-features__head>p{padding-left:16px}.eco-feature h3{margin-top:42px!important}}
+    /* Recursos integrados aos indicadores do Eco. */
+    .case-impact--project .impact-stat--eco{display:flex;flex-direction:column;align-items:flex-start}
+    .case-impact--project .impact-stat--eco b{font-size:clamp(3rem,5.2vw,5.4rem)}
+    .case-impact--project .impact-stat--eco:nth-child(2) b{color:var(--acid)}
+    .case-impact--project .impact-stat--eco strong{display:block;max-width:16ch;margin:20px 0 10px;color:#f3f0e8;font:600 clamp(1.2rem,1.8vw,1.65rem)/1.08 Manrope;letter-spacing:-.04em}
+    .case-impact--project .impact-stat--eco span{max-width:31ch;margin:0;color:#a6a39d;font-size:14px;line-height:1.55}
+    .case-impact--project .impact-stat--qualitative{justify-content:center;min-height:220px}
+    .case-impact--project .impact-stat--qualitative strong{margin:0 0 14px;font-size:clamp(1.65rem,2.35vw,2.3rem);line-height:1.06}
+    @media(max-width:700px){.case-impact--project .impact-stat--eco strong{margin-top:12px}.case-impact--project .impact-stat--eco span{font-size:13px}}
+    /* Fundo em largura total; conteúdo do cabeçalho centralizado. */
+    .project-cover{padding-left:0!important;padding-right:0!important}
+    .project-cover__inner{width:min(1380px,calc(100vw - 64px));margin-left:auto!important;margin-right:auto!important}
+    @media(max-width:700px){.project-cover__inner{width:calc(100vw - 44px)}}
+    /* Estrutura única dos cases: planos de fundo completos e conteúdo centralizado. */
+    .case-page{max-width:none!important;padding:0 0 90px!important}
+    .project-cover{width:100%!important;margin:0!important;padding:145px 0 62px!important}
+    #case-content>.project-marquee,#case-content>.case-impact,#case-content>.eco-dashboard,#case-content>.alumni-impact,#case-content>.alumni-principles,#case-content>.tech-group,#case-content>.case-quote,#case-content>.partnership-case,#case-content>.case-footer,.alumni-highlights{position:static!important;width:100%!important;max-width:none!important;margin:0!important;transform:none!important}
+    @media(max-width:700px){.case-page{padding-bottom:60px!important}.project-cover{padding-top:105px!important;padding-bottom:48px!important}}
+    /* IMA: contexto usa as duas colunas antes da galeria. */
+    body.project-ima .ima-context{display:block!important;padding-top:34px}
+    body.project-ima .ima-context>h2{margin:18px 0 22px!important;max-width:14ch}
+    body.project-ima .ima-context>p{max-width:62ch;margin:0!important}
+    body.project-ima .ima-context>.case-visual{display:block!important;margin-top:42px!important;position:static!important}
+    @media(max-width:700px){body.project-ima .ima-context{padding-top:30px}body.project-ima .ima-context>.case-visual{margin-top:36px!important}}
+    body.project-ima .case-about-label{color:var(--violet);font:600 12px Manrope;letter-spacing:.14em}
+    body.project-ima .case-about-label>span{display:block}
+    body.project-ima .case-about-label h2{margin:20px 0 0;color:var(--ink);font:500 clamp(3rem,5.4vw,5.4rem)/.92 Manrope;letter-spacing:-.07em}
+    body.project-ima .case-about-label h2 em{font:400 italic clamp(2.6rem,4.7vw,4.8rem)/1 Georgia,serif;color:var(--violet)}
+    @media(max-width:700px){body.project-ima .case-about-label h2{font-size:clamp(2.8rem,14vw,4.3rem)}body.project-ima .case-about-label h2 em{font-size:clamp(2.45rem,12vw,3.8rem)}}
+    /* As duas primeiras seções do IMA seguem a leitura editorial da Eco. */
+    body.project-ima .case-about{grid-template-columns:.82fr 1.45fr;gap:clamp(42px,6vw,88px);align-items:start;padding:84px 0!important}
+    body.project-ima .ima-about-copy{display:grid;gap:22px;margin:0!important;max-width:760px!important;color:#27333d!important;font-size:18px!important;line-height:1.65!important}
+    body.project-ima .ima-about-copy span{display:block}
+    body.project-ima .ima-context{display:block!important;padding:84px 0!important}
+    body.project-ima .ima-context__intro{display:grid;grid-template-columns:1fr 1fr;gap:clamp(42px,6vw,88px);align-items:start;position:relative;padding-top:25px;border-top:1px solid rgba(23,59,67,.24)}
+    body.project-ima .ima-context__intro::before{content:'';position:absolute;top:-1px;left:0;width:74px;border-top:3px solid #173b43}
+    body.project-ima .ima-context__intro .section-index{grid-column:1/-1;margin:0;color:var(--violet)}
+    body.project-ima .ima-context__intro h2{grid-column:1;grid-row:2;margin:0!important;max-width:none;white-space:nowrap;font:500 clamp(2.25rem,3.15vw,3.45rem)/1 Manrope;letter-spacing:-.055em}
+    body.project-ima .ima-context__intro p{grid-column:2;grid-row:2;align-self:end;max-width:650px!important;margin:4px 0 0!important;padding-left:24px;border-left:2px solid rgba(23,59,67,.32)}
+    body.project-ima .ima-context>.case-visual{display:block!important;margin-top:50px!important;padding:0!important;background:transparent!important;position:static!important}
+    @media(max-width:700px){body.project-ima .case-about{display:block;padding:58px 0!important}body.project-ima .ima-about-copy{margin-top:34px!important;font-size:16px!important;gap:18px}body.project-ima .ima-context{padding:58px 0!important}body.project-ima .ima-context__intro{display:block;padding-top:20px}body.project-ima .ima-context__intro .section-index{margin-bottom:22px}body.project-ima .ima-context__intro h2{white-space:normal;font-size:clamp(2.35rem,10vw,3.2rem)}body.project-ima .ima-context__intro p{margin-top:24px!important;padding-left:16px}body.project-ima .ima-context>.case-visual{margin-top:36px!important}}
+    .partnership-case--zetta{background:#080b0a!important;color:#f3f0e8!important;border-top:0!important}
+    .partnership-case--zetta .section-index{color:var(--acid)!important}
+    .partnership-case--zetta h2{color:#f3f0e8!important}
+    .partnership-case--zetta p{margin:16px 0 0;color:#a8b7af;font-size:16px}
+    .partnership-logos--zetta{width:min(420px,86%)!important;margin-top:34px!important}
+    .partnership-case--ufla{background:#171714!important;color:#f3f0e8!important;border-top:0!important}
+    .partnership-case--ufla .section-index{color:#c8c2ee!important}
+    .partnership-case--ufla h2{color:#f3f0e8!important}
+    .partnership-case--ufla p{margin:16px 0 0;color:#c9c5bd;font-size:16px}
+    .partnership-logos--ufla{width:min(390px,84%)!important;margin-top:34px!important}
+    .project-marquee--alumni-contrast{background:var(--acid)!important;color:var(--ink)!important;border:0}
+    /* Alumni: pilares qualitativos no lugar de métricas sem contexto. */
+    .alumni-highlights{display:grid;grid-template-columns:repeat(3,1fr);width:100vw;margin-left:calc(50% - 50vw);padding:clamp(58px,7vw,96px) max(32px,calc((100vw - 1180px)/2));background:#171714;color:#f3f0e8}
+    .alumni-highlights article{padding:0 clamp(22px,3.4vw,52px);border-left:1px solid rgba(243,240,232,.16)}
+    .alumni-highlights article:first-child{padding-left:0;border-left:0}
+    .alumni-highlights span{display:block;color:#c8c2ee;font:600 10px Manrope;letter-spacing:.14em}
+    .alumni-highlights h2{margin:34px 0 18px;font:600 clamp(2rem,3.4vw,3.5rem)/.96 Manrope;letter-spacing:-.065em}
+    .alumni-highlights p{max-width:30ch;margin:0;color:#a6a39d;font-size:15px;line-height:1.55}
+    @media(max-width:700px){.alumni-highlights{display:block;padding:54px 22px}.alumni-highlights article{padding:30px 0;border:0;border-top:1px solid rgba(243,240,232,.16)}.alumni-highlights article:first-child{padding-top:0;border-top:0}.alumni-highlights h2{margin:20px 0 12px;font-size:2.25rem}}
+
+    /* Alumni: um único grid centralizado para apresentação e contexto. */
+    body.project-alumni #case-content>.alumni-about,
+    body.project-alumni #case-content>.alumni-context{
+      width:min(1180px,calc(100% - 64px))!important;
+      max-width:1180px!important;
+      margin-inline:auto!important;
+      padding-left:0!important;
+      padding-right:0!important;
+      grid-template-columns:minmax(0,.82fr) minmax(0,1.45fr);
+      column-gap:clamp(48px,6vw,88px);
+    }
+    body.project-alumni #case-content>.alumni-about{
+      padding-top:86px;
+      padding-bottom:92px;
+    }
+    body.project-alumni #case-content>.alumni-context{
+      padding-top:92px;
+      padding-bottom:90px;
+    }
+    body.project-alumni #case-content>.alumni-context>.section-index{
+      grid-column:1/-1;
+      margin-bottom:28px;
+    }
+    body.project-alumni #case-content>.alumni-context>h2{
+      grid-column:1;
+      grid-row:2;
+      max-width:8ch;
+    }
+    body.project-alumni #case-content>.alumni-context>p{
+      grid-column:2;
+      grid-row:2;
+      align-self:end;
+      max-width:58ch;
+      margin:6px 0 0!important;
+    }
+    body.project-alumni #case-content>.alumni-context>.alumni-gallery{
+      grid-column:1/-1;
+      grid-row:3;
+      grid-template-columns:minmax(0,1.65fr) minmax(280px,.8fr);
+      min-width:0;
+      margin-top:58px!important;
+    }
+    @media(min-width:701px) and (max-width:960px){
+      body.project-alumni #case-content>.alumni-about,
+      body.project-alumni #case-content>.alumni-context{display:block}
+      body.project-alumni #case-content>.alumni-about>p{margin-top:38px}
+      body.project-alumni #case-content>.alumni-context>p{margin-top:28px!important}
+      body.project-alumni #case-content>.alumni-context>.alumni-gallery{margin-top:48px!important}
+    }
+    @media(max-width:700px){
+      body.project-alumni #case-content>.alumni-about,
+      body.project-alumni #case-content>.alumni-context{
+        width:calc(100% - 44px)!important;
+        padding-left:0!important;
+        padding-right:0!important;
+      }
+      body.project-alumni #case-content>.alumni-about{padding-top:62px;padding-bottom:68px}
+      body.project-alumni #case-content>.alumni-context{padding-top:65px;padding-bottom:65px}
+      body.project-alumni #case-content>.alumni-context>.alumni-gallery{grid-template-columns:1fr}
+    }
+    .case-intro::before{content:'ABOUT THE PROJECT'}
+    .case-hero>.section-index::after{content:'Government of Minas Gerais · 2025'}
+    #case-content>.process-case>.case-meta>div:nth-child(1) span::before{content:'Research'}
+    #case-content>.process-case>.case-meta>div:nth-child(1) span::after{content:'Analysis of government requirements, user interviews, and mapping of existing flows to understand the system’s true complexity.'}
+    #case-content>.process-case>.case-meta>div:nth-child(2) span::before{content:'Architecture'}
+    #case-content>.process-case>.case-meta>div:nth-child(2) span::after{content:'Complete design-system structure: token hierarchy, component anatomy, variants, and documentation for future teams.'}
+    #case-content>.process-case>.case-meta>div:nth-child(3) span::before{content:'Prototyping'}
+    #case-content>.process-case>.case-meta>div:nth-child(3) span::after{content:'Advanced Figma connections and coded prototypes in React and TypeScript enabled validation of real-world flows with stakeholders.'}
+    #case-content>.process-case>.case-meta>div::after{content:'Discovery'}
+    #case-content>.process-case>.case-meta>div:nth-child(2)::after{content:'Structure'}
+    #case-content>.process-case>.case-meta>div:nth-child(3)::after{content:'Validation'}
+  </style>
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="nav-shell"><a class="logo" href="index.html">VS<span>°</span></a><nav><a href="index.html#about">About</a><a href="index.html#projects">Projects</a><a href="index.html#contact">Contact</a></nav><a class="nav-cta" href="mailto:vanessafatima.desouza@gmail.com">Let's talk <span>↗</span></a></header>
+  <main class="case-page" id="case-content"></main>
+  <script>
+    const project = new URLSearchParams(location.search).get('project') || 'ima';
+    const cases = {
+      ima: {tag:'PRODUCT DESIGN · DESIGN SYSTEM',title:'IMA — Agricultural Registry',lead:'How can a complex digital ecosystem stay clear, consistent, and scalable?',intro:'The Minas Gerais Agricultural Registry is a government system developed with the Minas Gerais Agricultural Institute (IMA) to manage and inspect producers and rural properties across the state. As lead designer, I created a complete, robust design system capable of supporting a large-scale government platform. The project involved thousands of Figma variables, hundreds of interconnected components, and a design architecture built for scalability and efficient maintenance. Beyond Figma, we used TypeScript, Node, and React to explore and validate complex, real-world product flows.',stats:[['3,500+','Figma variables'],['+8,000','connections'],['45+','components'],],image:'sidagro-mock.png',second:'conexoes-sidagro.png'},
+      alumni: {tag:'UX/UI · COMMUNITY · EDUCATION',title:'Alumni ESAL UFLA',lead:'A digital experience that turns connection into impact for education.',intro:'An institutional platform that brings alumni together, celebrates ESAL-UFLA\'s history, and makes supporting the university simpler, clearer, and more human.',stats:[['R$2M+','potential impact'],['4','content areas'],['1','connected community'],],image:'alumni-tela-1.png',second:''},
+      eco: {tag:'PRODUCT DESIGN · WEB',title:'Eco — Carbon Credits',lead:'Transparency connecting conservation projects with companies seeking to offset emissions.',intro:'A marketplace with impact metrics, clear navigation, and a more trustworthy buying experience.',stats:[['8.5M+','t CO₂'],['Real time','metrics'],['Marketplace','certified'],],image:'',second:''}
+    };
+    const c=cases[project]||cases.ima;
+    document.body.classList.add(`project-${project}`);
+    document.title=`${c.title} — Vanessa Souza`;
+    document.querySelector('#case-content').innerHTML=`<a class="case-back" href="index.html#projects">← Back to projects</a><section class="case-hero"><div class="section-index">${c.tag}</div><h1>${c.title}<br><em>${c.lead}</em></h1><p class="case-intro">${c.intro}</p><div class="case-meta">${c.stats.map(s=>`<div><b>${s[0]}</b><span>${s[1]}</span></div>`).join('')}</div></section><section class="case-section"><div class="section-index">01 / CONTEXT</div><h2>Complexity calls for<br>clarity.</h2><p>The challenge was to make a broad product easier to understand through information architecture, reusable components, and workflows aligned with how people actually work.</p>${c.image?`<div class="case-visual"><img src="${c.image}" alt="${c.title} project mockup"></div>`:''}</section>${c.second?`<section class="case-section"><div class="section-index">02 / ECOSYSTEM</div><h2>A product designed<br>as a system.</h2><p>The map below represents the density of the project's relationships and paths. It communicates the scale of the work without exposing internal information.</p><div class="case-visual"><img src="${c.second}" alt="IMA project connection map"></div><p class="case-note">An anonymized view of connections across flows, screens, and components.</p></section><section class="case-section"><div class="section-index">03 / DESIGN PROCESS</div><h2>From problem<br>to structure.</h2><div class="case-meta"><div><b>01</b><span>Research<br>Analysis of government requirements and user needs</span></div><div><b>02</b><span>Architecture<br>Design-system structure and component definition</span></div><div><b>03</b><span>Prototyping<br>Advanced connections and interactive user flows</span></div></div></section>`:''}<footer class="case-footer"><a href="index.html#projects">← All projects</a><a href="index.html#contact">Let's talk ↗</a></footer>`;
+    if (project === 'alumni') document.querySelector('#case-content').innerHTML = `<a class="case-back" href="index.html#projects">← Back to projects</a><section class="case-hero alumni-hero"><div class="section-index">${c.tag}</div><h1>${c.title}<br><em>${c.lead}</em></h1><p class="case-intro">${c.intro}</p><div class="case-meta">${c.stats.map(s=>`<div><b>${s[0]}</b><span>${s[1]}</span></div>`).join('')}</div></section><section class="case-section alumni-context"><div class="section-index">01 / CONTEXT</div><h2>Complexity calls for<br>clarity.</h2><p>The website brings together the people and stories behind ESAL-UFLA in an accessible, institutional, action-oriented experience. Its architecture balances the university's story, course content, and the invitation to donate.</p><div class="alumni-gallery"><figure class="alumni-gallery__hero"><img src="alumni-tela-1.png" alt="Alumni ESAL UFLA homepage"><figcaption>Institutional homepage: a welcoming entry point for the Alumni community.</figcaption></figure><figure><img src="alumni-tela-2.png" alt="Alumni ESAL UFLA course section"><figcaption>Programs: organized content introducing the university.</figcaption></figure></div></section><section class="case-section alumni-impact"><div class="section-index">02 / MAKING IMPACT CLEAR</div><h2>Donating also means<br>understanding the impact.</h2><p>The screens connect each contribution to tangible outcomes: scholarships, research, technology, and infrastructure. Visual communication turns a donation into active participation in the university's story.</p><div class="alumni-gallery alumni-gallery--reverse"><figure><img src="alumni-tela-3.png" alt="Alumni ESAL UFLA scholarships and research section"><figcaption>Impact areas presented clearly.</figcaption></figure><figure class="alumni-gallery__hero"><img src="alumni-tela-4.png" alt="Alumni ESAL UFLA Our History section"><figcaption>Institutional memory connected to the future.</figcaption></figure></div></section><section class="alumni-principles"><div class="section-index">03 / DESIGN DIRECTION</div><div class="alumni-principles__grid"><div><b>01</b><h3>Welcome</h3><p>An approachable visual language that invites different generations to see themselves in the institution.</p></div><div><b>02</b><h3>Organize</h3><p>Institutional information arranged in focused blocks for comfortable reading and direct navigation.</p></div><div><b>03</b><h3>Mobilize</h3><p>Donation calls to action positioned as a natural continuation of people's relationship with the university.</p></div></div></section><footer class="case-footer"><a href="index.html#projects">← All projects</a><a href="index.html#contact">Let's talk ↗</a></footer>`;
+    if (project === 'eco') document.querySelector('#case-content').innerHTML = `<a class="case-back" href="index.html#projects">← Back to projects</a><section class="case-hero eco-hero"><div class="section-index">PRODUCT DESIGN · WEB</div><h1>Eco —<br>Carbon Credits<br><em>Transparency that turns conservation into value.</em></h1></section><section class="case-section eco-showcase"><div class="eco-showcase__intro"><div><div class="section-index">01 / PLATFORM</div><h2>A clear journey,<br>from impact to action.</h2></div><p>A complete platform connecting companies, projects, and carbon credits through a simple, trustworthy, data-driven experience.</p></div><div class="eco-shot-grid"><figure><img src="eco-tela-1.png" alt="Eco landing page"><figcaption>Landing page: value proposition, indicators, and entry points into the platform.</figcaption></figure><figure><img src="eco-tela-2.png" alt="Eco platform benefits"><figcaption>Benefits and trust criteria for credit trading.</figcaption></figure><figure><img src="eco-tela-3.png" alt="How Eco works"><figcaption>The user flow presented in simple, transparent steps.</figcaption></figure></div></section><section class="case-section eco-dashboard"><div class="section-index">02 / MANAGEMENT</div><h2>Data that supports<br>better decisions.</h2><p>The dashboard centralizes credits, reports, and simulations so every transaction can be tracked clearly.</p><div class="eco-shot-grid"><figure><img src="eco-tela-4.png" alt="Eco credit dashboard"><figcaption>Overview dashboard showing available credits.</figcaption></figure><figure><img src="eco-tela-5.png" alt="Eco sales reports"><figcaption>Reports with sales and revenue indicators.</figcaption></figure><figure><img src="eco-tela-6.png" alt="Eco sales table"><figcaption>Details of completed transactions.</figcaption></figure></div></section><section class="case-section eco-showcase"><div class="eco-showcase__intro"><div><div class="section-index">03 / MARKET</div><h2>Trade with<br>confidence.</h2></div><p>Filters, quotes, and calculators make the carbon market more accessible to people buying, selling, and tracking their own impact.</p></div><div class="eco-shot-grid"><figure><img src="eco-tela-7.png" alt="Eco credit simulator"><figcaption>A simulator for estimating values and comparing project types.</figcaption></figure><figure><img src="eco-tela-8.png" alt="Eco carbon market"><figcaption>A searchable marketplace with cards for available credits.</figcaption></figure></div></section><footer class="case-footer"><a href="index.html#projects">← All projects</a><a href="index.html#contact">Let's talk ↗</a></footer>`;
+    const connectionSection = [...document.querySelectorAll('#case-content .case-section')].find(section => section.textContent.includes('02 / ECOSSISTEMA'));
+    if (connectionSection) {
+      const connectionVisual = connectionSection.querySelector('.case-visual');
+      connectionVisual.innerHTML = `<div class="connection-map" aria-label="Visual map of connections between flows, screens, and components"><img src="${c.second}" alt="IMA project connection map"><span class="connection-map__legend"><i></i> relationship map</span><span class="connection-map__spotlight" aria-hidden="true"></span><span class="connection-map__node connection-map__node--one">G</span><span class="connection-map__node connection-map__node--two">G</span><span class="connection-map__node connection-map__node--three">↗</span><span class="connection-map__label connection-map__label--top"><strong>+8,000</strong>connections between flows</span><span class="connection-map__label connection-map__label--bottom"><strong>45+</strong>related components</span></div>`;
+      const map = connectionVisual.querySelector('.connection-map');
+      map.querySelectorAll('.connection-map__node').forEach(node => { if (node.textContent.trim() === 'G') node.remove(); });
+      map.addEventListener('pointermove', event => { const rect = map.getBoundingClientRect(); map.style.setProperty('--mx', `${((event.clientX - rect.left) / rect.width) * 100}%`); map.style.setProperty('--my', `${((event.clientY - rect.top) / rect.height) * 100}%`); });
+      map.addEventListener('pointerleave', () => { map.style.setProperty('--mx', '52%'); map.style.setProperty('--my', '48%'); });
+      const ecosystemCopy = document.createElement('div');
+      ecosystemCopy.className = 'ecosystem-copy';
+      const ecosystemHeading = connectionSection.querySelector('h2');
+      const ecosystemDescription = connectionSection.querySelector(':scope > p:not(.case-note)');
+      ecosystemCopy.append(ecosystemHeading, ecosystemDescription);
+      connectionSection.insertBefore(ecosystemCopy, connectionVisual);
+    }
+    document.querySelector('.case-hero').insertAdjacentHTML('beforeend', '<span class="case-scroll-note">SCROLL<i></i></span>');
+    if (project === 'ima') document.querySelector('.case-hero').insertAdjacentHTML('afterend', `<section class="case-impact"><div class="impact-marquee"><span>+8,000 CONNECTIONS · 45+ COMPONENTS · FIGMA · TYPESCRIPT · REACT · NODE · PRODUCT DESIGN · DESIGN SYSTEM · IMA · MINAS GERAIS · GOVERNMENT · 3,500+ VARIABLES · </span><span aria-hidden="true">+8,000 CONNECTIONS · 45+ COMPONENTS · FIGMA · TYPESCRIPT · REACT · NODE · PRODUCT DESIGN · DESIGN SYSTEM · IMA · MINAS GERAIS · GOVERNMENT · 3,500+ VARIABLES · </span></div><div class="impact-stats">${c.stats.map(s=>`<div class="impact-stat"><b>${s[0]}</b><span>${s[1]}</span></div>`).join('')}</div></section><section class="case-about"><div class="case-about-label"><span>ABOUT THE PROJECT</span><h2>Clarity that<br>scales.</h2></div><p>${c.intro}</p></section>`);
+    const firstSection = document.querySelector('#case-content .case-section');
+    const heroIntro = document.querySelector('.case-hero .case-intro');
+    const heroMeta = document.querySelector('.case-hero .case-meta');
+    if (heroMeta) heroMeta.remove();
+    if (heroIntro) heroIntro.remove();
+    if (project === 'alumni') document.querySelector('.alumni-hero').insertAdjacentHTML('afterend', '<section class="alumni-about"><div class="alumni-about-title"><div class="section-index">01 / ABOUT THE PROJECT</div><h2>Connections that<br>transform.</h2></div><p>The ESAL UFLA Alumni Association strengthens bonds among the institution\'s alumni and supports the university\'s continued development.<br><br>I designed a complete digital platform that connects alumni, promotes networking events, and centralizes fundraising for educational projects.<br><br>The website prioritizes usability, donation transparency, and community engagement, resulting in greater participation and financial contributions.</p></section>');
+    if (project === 'ima') {
+      document.querySelector('.case-hero h1').innerHTML = 'IMA —<br>Agricultural<br>Registry<em>' + c.lead + '</em>';
+      document.querySelector('.case-footer').insertAdjacentHTML('beforebegin', '<section class="tech-group"><div class="section-index">04 / TECHNICAL EXPLORATION</div><h3>We used code to explore the product.</h3><p>To validate complex real-world flows, we combined Figma prototypes with a functional layer built in code.</p><div class="tech-tags"><span>Figma</span><span>TypeScript</span><span>Node</span><span>React</span><span>+8,000 connections</span></div></section>');
+      document.querySelector('.tech-group').insertAdjacentHTML('afterend', '<section class="case-quote"><p>"A design system is not a component library — it is a shared language that enables scale without sacrificing coherence."</p></section>');
+      document.querySelector('.case-quote').insertAdjacentHTML('afterend', '<section class="partnership-case"><div class="section-index">05 / PARTNERSHIP</div><h2>A collaborative project</h2><img class="partnership-logos" src="sidagro-logos.png" alt="IMA and OGEDAI laboratory logos"></section>');
+    }
+    const contextSection = document.querySelector('#case-content .case-section');
+    if (project === 'ima' && contextSection) contextSection.classList.add('context-section', 'ima-context');
+    if (project === 'ima' && contextSection) contextSection.querySelector('h2').innerHTML = 'A clear journey,<br>from registration to action.';
+    if (project === 'ima') {
+      const imaAbout = document.querySelector('.case-about');
+      if (imaAbout) {
+        const originalCopy = imaAbout.querySelector('p');
+        originalCopy.className = 'ima-about-copy';
+        originalCopy.innerHTML = '<span>The Minas Gerais Agricultural Registry is a government system developed with the Minas Gerais Agricultural Institute to manage and inspect producers and rural properties across the state.</span><span>As lead designer, I created a complete, robust design system capable of supporting the complexity of a large-scale government platform.</span><span>Beyond Figma, we used TypeScript, Node, and React to explore and validate complex real-world product flows.</span>';
+      }
+      if (contextSection) {
+        const visual = contextSection.querySelector('.case-visual');
+        const intro = document.createElement('div');
+        intro.className = 'ima-context__intro';
+        intro.append(contextSection.querySelector('.section-index'), contextSection.querySelector('h2'), contextSection.querySelector(':scope > p'));
+        contextSection.insertBefore(intro, visual);
+      }
+    }
+    if (false && project === 'ima' && contextSection) {
+      const visual = contextSection.querySelector('.case-visual');
+      const screens = ['sidagro-mock.png','ima-tela-1.png','ima-tela-2.png','ima-tela-3.png','ima-tela-5.png'];
+      visual.innerHTML = `<div class="case-carousel">${screens.map((src,i)=>`<img class="${i===0?'active ':''}${i===3?'short-screen':''}" src="${src}" alt="Screen ${i+1} from the IMA project">`).join('')}<div class="carousel-dots">${screens.map((_,i)=>`<i class="${i===0?'active':''}"></i>`).join('')}</div><div class="carousel-controls"><button type="button" data-dir="-1" aria-label="Previous screen">←</button><button type="button" data-dir="1" aria-label="Next screen">→</button></div></div>`;
+      const carousel = visual.querySelector('.case-carousel');
+      carousel.querySelector('.carousel-controls').remove();
+      const imgs = [...carousel.querySelectorAll('img')];
+      const dots = [...carousel.querySelectorAll('.carousel-dots i')];
+      let current = 0;
+      const show = (index) => { current = (index + imgs.length) % imgs.length; imgs.forEach((img,i)=>img.classList.toggle('active',i===current)); dots.forEach((dot,i)=>dot.classList.toggle('active',i===current)); };
+      carousel.querySelectorAll('button').forEach(button => button.addEventListener('click', () => show(current + Number(button.dataset.dir))));
+      let dragStart = null;
+      carousel.addEventListener('pointerdown', event => { dragStart = event.clientX; carousel.setPointerCapture(event.pointerId); });
+      carousel.addEventListener('pointerup', event => { if (dragStart === null) return; const distance = event.clientX - dragStart; if (Math.abs(distance) > 45) show(current + (distance < 0 ? 1 : -1)); dragStart = null; });
+      setInterval(() => show(current + 1), 5000);
+    }
+    if (project === 'ima' && contextSection) {
+      const imaVisual = contextSection.querySelector('.case-visual');
+      const imaScreens = ['sidagro-mock.png','ima-tela-1.png','ima-tela-2.png','ima-tela-3.png','ima-tela-5.png'];
+      imaVisual.innerHTML = `<div class="ima-screen-gallery">${imaScreens.map((src,i)=>`<figure class="${i===0?'ima-screen-gallery__featured':''}"><img src="${src}" alt="Screen ${i+1} from the IMA project"><figcaption>Screen ${String(i+1).padStart(2,'0')} · Agricultural Registry</figcaption></figure>`).join('')}</div>`;
+    }
+    document.querySelectorAll('#case-content .case-section').forEach(section => {
+      if (section.textContent.includes('02 / ECOSYSTEM')) section.classList.add('context-section');
+      if (section.textContent.includes('02 / ECOSYSTEM')) section.classList.add('ecosystem-case');
+      if (section.textContent.includes('03 / DESIGN PROCESS')) {
+        section.classList.add('process-case');
+        section.querySelectorAll('.case-meta > div').forEach((step, index) => { step.tabIndex = 0; step.setAttribute('aria-label', `Step ${index + 1}`); });
+      }
+    });
+    const coverDetails = {
+      ima: {label:'IMA',number:'01 / GOVERNMENT SYSTEM',image:'sidagro-mock.png',alt:'Agricultural Registry interface',meta:[['YEAR','2025'],['TYPE','Product Design'],['SECTOR','Government'],['PLATFORM','Web system']]},
+      alumni: {label:'alumni',number:'02 / COMMUNITY',image:'alumni-tela-1.png',alt:'Alumni ESAL UFLA platform screen',meta:[['TYPE','UX/UI Design'],['FOCUS','Community'],['SECTOR','Education'],['PLATFORM','Web']]},
+      eco: {label:'eco',number:'03 / CARBON CREDITS',image:'eco-tela-1.png',alt:'Eco platform screen',meta:[['TYPE','Product Design'],['MARKET','Carbon credits'],['FOCUS','Sustainability'],['PLATFORM','Web B2B']]}
+    };
+    const cover = coverDetails[project] || coverDetails.ima;
+    const hero = document.querySelector('.case-hero');
+    hero.className = 'case-hero project-cover';
+    hero.innerHTML = `<div class="project-cover__inner"><a class="project-cover__back" href="index.html#projects">← All projects</a><span class="project-cover__number">${cover.number}</span><div class="project-cover__grid"><div><h1>${cover.label}</h1><p class="project-cover__lead">“${c.lead}”</p><div class="project-cover__meta">${cover.meta.map(item => `<div><span>${item[0]}</span><b>${item[1]}</b></div>`).join('')}</div></div><div class="project-cover__media"><img src="${cover.image}" alt="${cover.alt}"></div></div></div>`;
+    if (project === 'eco') {
+      hero.insertAdjacentHTML('afterend', `<section class="case-section eco-about"><div><div class="section-index">01 / ABOUT THE PROJECT</div><h2>Impact that<br>connects.</h2></div><div><p>Eco was born from the need to connect companies seeking to offset their carbon emissions with producers who preserve and regenerate the environment.</p><p>We developed a complete platform that makes carbon-credit trading transparent, secure, and accessible for everyone involved.</p><p>The result is a solution that connects stakeholders, promotes sustainable practices, and actively contributes to environmental preservation in Brazil.</p></div></section><section class="case-section eco-features"><div class="eco-features__head"><div><div class="section-index">02 / FEATURES</div><h2>One platform,<br>many connections.</h2></div><p>Tools designed to make every stage of a transaction simpler, more transparent, and more secure.</p></div><div class="eco-features__grid"><article class="eco-feature"><b>01</b><h3>Credit Marketplace</h3><p>A complete platform for buying and selling carbon credits through safe, transparent transactions.</p></article><article class="eco-feature"><b>02</b><h3>Real-Time Analytics</h3><p>An interactive dashboard with data visualization, impact metrics, and detailed reports.</p></article><article class="eco-feature"><b>03</b><h3>User Management</h3><p>A robust system for managing producers, buyers, and platform partners.</p></article></div></section>`);
+      document.querySelectorAll('.eco-showcase .section-index')[0].textContent = '03 / PLATFORM';
+      document.querySelector('.eco-dashboard .section-index').textContent = '04 / MANAGEMENT';
+      document.querySelectorAll('.eco-showcase .section-index')[1].textContent = '05 / MARKET';
+    }
+    if (project === 'alumni' || project === 'eco') {
+      const marqueeCopy = project === 'alumni'
+        ? 'ALUMNI ESAL UFLA · COMMUNITY · EDUCATION · DONATIONS · CONNECTIONS · SOCIAL IMPACT · DIGITAL EXPERIENCE · '
+        : 'CARBON CREDITS · SUSTAINABILITY · CARBON MARKET · POSITIVE IMPACT · TRANSPARENCY · ECO · WEB B2B · ';
+      hero.insertAdjacentHTML('afterend', `<section class="project-marquee project-marquee--${project}" aria-label="Temas do projeto"><span>${marqueeCopy}</span><span aria-hidden="true">${marqueeCopy}</span></section>`);
+      const projectMarquee = hero.nextElementSibling;
+      projectMarquee.insertAdjacentHTML('afterend', `<section class="case-impact case-impact--project"><div class="impact-stats">${c.stats.map(stat => `<div class="impact-stat"><b>${stat[0]}</b><span>${stat[1]}</span></div>`).join('')}</div></section>`);
+    }
+    if (project === 'alumni') {
+      document.querySelector('.project-marquee--alumni')?.classList.add('project-marquee--alumni-contrast');
+      document.querySelector('.case-impact--project')?.remove();
+      const alumniMarquee = document.querySelector('.project-marquee--alumni');
+      alumniMarquee.insertAdjacentHTML('afterend', `<section class="alumni-highlights" aria-label="Alumni project pillars"><article><span>01 / COMMUNITY</span><h2>Connect<br>stories.</h2><p>A welcoming digital experience that brings alumni closer to the university and to one another.</p></article><article><span>02 / CONTRIBUTION</span><h2>Turn connection<br>into action.</h2><p>Donations presented clearly and humanely, tied directly to educational projects.</p></article><article><span>03 / EXPERIENCE</span><h2>Make impact<br>clear.</h2><p>Content, navigation, and calls to action organized to guide every next step.</p></article></section>`);
+      document.querySelector('.case-footer').insertAdjacentHTML('beforebegin', '<section class="partnership-case partnership-case--ufla"><div class="section-index">04 / PARTNERSHIP</div><h2>A collaborative project</h2><p>Developed for the Federal University of Lavras.</p><img class="partnership-logos partnership-logos--ufla" src="ufla-logo-transparent.png" alt="Federal University of Lavras logo"></section>');
+    }
+    if (project === 'eco') {
+      const ecoIndicators = [
+        ['Credit marketplace', 'Buy and sell credits through safe, transparent transactions.'],
+        ['Analytics and reports', 'Data, impact metrics, and reports that guide decisions.'],
+        ['Users and partners', 'Manage producers, buyers, and partners in one place.']
+      ];
+      const impactStats = document.querySelector('.case-impact--project .impact-stats');
+      impactStats.innerHTML = ecoIndicators.map(item => `<article class="impact-stat impact-stat--eco impact-stat--qualitative"><strong>${item[0]}</strong><span>${item[1]}</span></article>`).join('');
+      document.querySelector('.eco-features')?.remove();
+      document.querySelector('.case-footer').insertAdjacentHTML('beforebegin', '<section class="partnership-case partnership-case--zetta"><div class="section-index">06 / PARTNERSHIP</div><h2>A collaborative project</h2><p>Developed in collaboration with Zetta.</p><img class="partnership-logos partnership-logos--zetta" src="zetta-logo.png" alt="Zetta logo"></section>');
+    }
+    const connectionText = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+    const textNodes = [];
+    while (connectionText.nextNode()) textNodes.push(connectionText.currentNode);
+    textNodes.forEach(node => { node.nodeValue = node.nodeValue.replaceAll('+8.000', '+200'); });
+  </script>
+</body>
+</html>

@@ -69,4 +69,4 @@ a:focus-visible,button:focus-visible{outline:2px solid var(--violet)}
 /* A hero mantém o retrato livre em telas de notebook e desktop. */
 @media(min-width:801px){.hero h1{max-width:61%;font-size:clamp(2.9rem,4.9vw,5.55rem);line-height:.93}}
 /* Keep the intro copy clear of the portrait on wide screens. */
-@media(min-width:801px){.hero-bottom{padding-right:min(31vw,430px)}.hero-bottom p{max-width:54ch}}
+@media(min-width:801px){.hero-bottom{padding-right:min(31vw,430px)}.hero-bottom p{width:calc(100% - min(31vw,430px));max-width:54ch;flex:0 1 54ch}.hero-bottom .round-link{flex:0 0 120px}}
